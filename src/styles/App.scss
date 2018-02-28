@@ -1,0 +1,1050 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*************************************/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        font-size: 50%;
+    }
+}
+
+svg {
+
+}
+
+.svg-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;    
+    cursor: pointer;
+}
+
+.svg-icon path {
+    stroke: rgba(255, 255, 255, 0.9);
+    fill: none;
+    stroke-width: 1;
+}
+
+input,
+button,select {
+    outline: none;
+    border: none;
+}
+// ::-webkit-date-edit-year-field:not([aria-valuenow]),
+// ::-webkit-date-edit-month-field:not([aria-valuenow]),
+// ::-webkit-date-edit-day-field:not([aria-valuenow]) {
+//     color: transparent;
+// }
+.date-picker{
+  display:flex;
+  padding-top: 10px;
+  input[type="date"]{
+    flex:0.5;
+    height: 30px;
+    padding-left: 10px;
+    &:first-child{
+      margin-right:10px;
+    }
+    &::before {
+      //content: attr(data-placeholder);
+      //width: 100%;
+    }
+  }
+
+//input[type="date"]:focus::before{display:none}
+//input[type="date"][value=" "]::before{display:none}
+}
+
+.cont {
+    position: relative;
+    height: 100%;
+    /*background-image: url("../images/slider.jpg");*/
+    background-size: cover;
+    overflow: auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.demo {
+    position: absolute;
+    /*  top: 50%;
+  left: 50%;
+  margin-left: -15rem;
+  margin-top: -26.5rem;*/
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.trustmark {
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 55px;
+}
+
+.login {
+    position: relative;
+    height: 100%;
+    background: -webkit-linear-gradient(to top, rgba(128, 117, 167, 0.8) 0%, rgb(0, 25, 64) 100%);
+    background: linear-gradient(to top, rgba(128, 117, 167, 0.8) 0%, rgb(0, 25, 64) 100%);
+    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+    transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+    transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+    transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25), -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.login.inactive {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.login__check {
+    position: absolute;
+    top: 16rem;
+    left: 13.5rem;
+    width: 14rem;
+    height: 2.8rem;
+    background: #fff;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.login__check:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 2.8rem;
+    height: 5.2rem;
+    background: #fff;
+    box-shadow: inset -0.2rem -2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.login__form {
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+}
+
+.login__row {
+    height: 5rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    &:first-child{
+        margin-bottom:15px;
+    }
+}
+
+.login__icon {
+    margin-bottom: -0.4rem;
+    margin-right: 0.5rem;
+}
+
+.login__icon.name path {
+    stroke-dasharray: 73.50196075439453;
+    stroke-dashoffset: 73.50196075439453;
+    -webkit-animation: animatePath 2s 0.5s forwards;
+    animation: animatePath 2s 0.5s forwards;
+}
+
+.login__icon.pass path {
+    stroke-dasharray: 92.10662841796875;
+    stroke-dashoffset: 92.10662841796875;
+    -webkit-animation: animatePath 2s 0.5s forwards;
+    animation: animatePath 2s 0.5s forwards;
+}
+
+.login__input {
+    display: inline-block;
+    width: 22rem;
+    height: 100%;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #FDFCFD;
+}
+
+.login__submit {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    margin: 5rem 0 2.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    background: #09aaff;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+    transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+}
+
+.login__submit:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border: 2px dotted #fff;
+    border-radius: 50%;
+    border-left: none;
+    border-bottom: none;
+    -webkit-transition: opacity 0.1s 0.4s;
+    transition: opacity 0.1s 0.4s;
+    opacity: 0;
+}
+
+.login__submit.processing {
+    width: 4rem;
+    font-size: 0;
+}
+
+.login__submit.processing:after {
+    opacity: 1;
+    -webkit-animation: rotate 0.5s 0.4s infinite linear;
+    animation: rotate 0.5s 0.4s infinite linear;
+}
+
+.login__submit.success {
+    -webkit-transition: opacity 0.1s 0.3s, background-color 0.1s 0.3s, -webkit-transform 0.3s 0.1s ease-out;
+    transition: opacity 0.1s 0.3s, background-color 0.1s 0.3s, -webkit-transform 0.3s 0.1s ease-out;
+    transition: transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s;
+    transition: transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s, -webkit-transform 0.3s 0.1s ease-out;
+    -webkit-transform: scale(30);
+    transform: scale(30);
+    opacity: 0.9;
+}
+
+.login__submit.success:after {
+    -webkit-transition: opacity 0.1s 0s;
+    transition: opacity 0.1s 0s;
+    opacity: 0;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.login__signup {
+    font-size: 1.2rem;
+    color: #ABA8AE;
+}
+
+.login__signup a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.app,.tracker {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+    transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+    transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+    transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25), -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.8) -2px 0 8px;
+}
+
+.app.active,.tracker.active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    display: flex;
+}
+
+.app.active .app__user-photo,.tracker.active .app__user-photo {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+
+.app.active .app__meeting,.tracker.active .app__meeting {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.app__top {
+    position: relative;
+    flex: 0.4;
+    background: rgba(0, 0, 0, 1);
+    padding: 2rem 1.5rem 2rem;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.app__bot {
+    position: relative;
+    /*height: 25rem;*/
+    background: #fff;
+    overflow-y: scroll;
+    flex: 1;
+    .app__days {
+        font-size: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        .filter-container{
+          width: 100%;
+          position: fixed;
+          z-index: 1;
+          background-color: #f3f3f3;
+          padding: 12px 10px;
+          .sltbox{
+            position: relative;
+          select{
+            display: inline;
+            background: transparent;
+            font-size: inherit;
+            text-align: center;
+            left: 2px;
+            -webkit-appearance: none;
+            margin: 0px 4px 0 5px;
+            border-bottom: 1px dashed;
+            border-radius: 0;
+            padding-right: 15px;
+          }
+          &::after{
+            content:"";
+            background: url("../images/icons/arrow_down.svg") no-repeat;
+            background-size: cover;
+            position:absolute;
+            right:3px;
+            top:4px;
+            font-size: 12px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+          #date{
+            width: 20px;
+            height: 20px;
+            background: url("/images/calendar.svg") no-repeat;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            opacity: 0.8;
+            background-size: cover;
+            cursor:pointer;z-index: 2;
+          }
+        }
+    }
+    .app__meetings {
+        padding-top: 43px;
+        padding-bottom: 55px;
+    }
+}
+
+.green-amount {
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bold;
+    float: right;
+}
+
+.date-mini {
+    font-size: 1.5rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 12px;
+    color: #424242;
+}
+
+.red-amount {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    float: right;
+}
+
+.desc_mini {
+    float: none;
+    font-size: 1.3rem;
+}
+
+.app__menu-btn {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    width: 1.8rem;
+    height: 1.7rem;
+    cursor: pointer;
+}
+
+.app__menu-btn span,
+.app__menu-btn:before,
+.app__menu-btn:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.app__menu-btn span {
+    top: 0.8rem;
+}
+
+.app__menu-btn:before {
+    content: "";
+    top: 0;
+}
+
+.app__menu-btn:after {
+    content: "";
+    bottom: 0;
+}
+
+.app__icon {
+    position: absolute;
+    top: 2rem;
+}
+
+.app__icon.search {
+    right: 1.5rem;
+    stroke-dasharray: 61.847137451171875;
+    stroke-dashoffset: 61.847137451171875;
+    -webkit-animation: animatePath 0.5s 0.5s forwards;
+    animation: animatePath 0.5s 0.5s forwards;
+}
+
+.app__hello {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.align_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    width: 180px;
+    height: 180px;
+}
+
+/*#dashboard .align_center {
+    top: 43.5%;
+    left: 43.5%;
+}*/
+
+.rotate_flip {
+    transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.app__user {
+    width: 150px;
+    height: 150px;
+    transition: 2s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 1s ease;
+}
+
+.hide {
+    display: none;
+}
+
+.app__user-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55);
+    transition: -webkit-transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55);
+    transition: transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55);
+    transition: transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55), -webkit-transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.app__user-notif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    line-height: 3rem;
+    text-align: center;
+    background: #50D2C2;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.app__month:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.app__month-name {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.app__month-btn {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.app__month-btn.left {
+    float: left;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.app__month-btn.right {
+    float: right;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.app__day {
+    width: 14%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.app__day.weekday {
+    color: #919197;
+    text-transform: uppercase;
+}
+
+.app__day.date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3C3C43;
+}
+
+.app__meeting {
+    position: relative;
+    border-top: 1px solid #EEEEEF;
+    padding: 10px 10px;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.app__meeting:nth-child(1) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.app__meeting:nth-child(2) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.app__meeting:nth-child(3) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.app__meeting:nth-child(4) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.app__meeting:nth-child(5) {
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+.app__meeting-photo {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.app__meeting-name {
+    color: #000;
+    font-size: 1.3rem;
+    float: right;
+}
+
+.app__meeting-info {
+    color: #949498;
+    font-size: 1.1rem;
+    width: 75%;
+}
+
+.app__logout {
+    position: absolute;
+    bottom: 10%;
+    left: 34%;
+    width: 4.6rem;
+    height: 4.6rem;
+    margin-right: -2.3rem;
+    margin-bottom: -2.3rem;
+    background: #041d3a;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: bottom 0.4s 0.1s, right 0.4s 0.1s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
+    transition: bottom 0.4s 0.1s, right 0.4s 0.1s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
+    transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s;
+    transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s, -webkit-transform 0.4s 0.4s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    z-index: 0;
+    box-shadow: inset #010e1d 0px 0px 6px 2px;
+    &:after {
+        content: "Logout";
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: -20px;        
+    }
+}
+.app__logout.show{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.app__logout.clicked {
+    bottom: 50%;
+    right: 50%;
+    -webkit-transform: scale(30) !important;
+    transform: scale(30) !important;
+    opacity: 0.9;
+}
+
+.app__logout.clicked svg {
+    opacity: 0;
+}
+
+.app__logout-icon {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 54%;
+    left: 55%;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    -webkit-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+}
+
+.app__logout-icon path {
+    stroke-width: 2px;
+    stroke-dasharray: 64.36235046386719;
+    stroke-dashoffset: 64.36235046386719;
+    -webkit-animation: animatePath 0.5s 0.5s forwards;
+    animation: animatePath 0.5s 0.5s forwards;
+}
+
+.ripple {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    margin-left: -7.5rem;
+    margin-top: -7.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: animRipple 0.4s;
+    animation: animRipple 0.4s;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes animRipple {
+    to {
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+@keyframes animRipple {
+    to {
+        -webkit-transform: scale(3.5);
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes animatePath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animatePath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.app__top .container {
+    margin-top: 20px;
+    overflow:hidden;
+}
+.container .progress {
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+.container .balance__txt {
+    color: #c5c5c5;
+    font-size: 1.6rem; 
+    span {
+        display: block;
+        font-size: 2.5rem;
+        color: #fff;        
+    }
+  }
+.bal_indicator {
+  /*left:8px;*/
+}
+
+.transType {
+  text-transform: capitalize;
+}
+
+.app__top.scrolled {
+  flex: 0.04;
+  padding-top: 1.4rem;
+  overflow: hidden;
+  .app__month {
+    display: none;
+  }
+}
+.app__menu-btn {
+  &.back {
+    &::before {
+      top:2px;
+      width: 80%;
+      transform: rotate(-35deg);
+      transition: 1s ease;
+    }
+    span {
+      top:0.8rem;
+      width: 120%;
+      transition: 0.5s ease;
+    }
+    &::after {
+      bottom: 3px;
+      width: 80%;
+      transform: rotate(35deg);
+      transition: 1s ease;
+    }
+  }
+}
+
+.tracker__btn {
+    /*border-right: solid 1px #fff;*/
+    background: #24a035;
+    border-radius: 0;
+    margin: 0;
+    height: 6rem;  
+    width: 100% !important;
+    position:fixed;
+    bottom:0;
+    z-index: 2;
+}
+.dock__menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;  
+  .login__submit {
+    flex: 1;
+    /*border-right: solid 1px #fff;*/
+    background: #24a035;
+    border-radius: 0;
+    margin: 0;
+    height: 6rem;    
+  }
+  .login__noti {
+    flex: 1;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    background: #b3d2a0;
+    color: #748668;
+    margin: 0;
+    height: 6rem;    
+  }
+  .expense__btn {
+    font-size: 15px;
+    span {
+        display: block;
+        font-size: 12px;
+        margin-top: 3px;
+        color: #b2d1a0;        
+    }
+  }
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+  transform: scale(1);
+}
+#rotate_flip{
+ &::after {
+    content: attr(data-bal);
+    width: 150px;
+    height: 150px;
+    background: -webkit-linear-gradient(top, transparent 30%, rgba(0, 0, 0, 1) 99%, rgba(0, 0, 0, 1) 100%);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 80px;    
+}
+}
+.app__top .nobal{
+    margin-bottom: 10px;
+    margin-top: 0;
+    #rotate_flip{
+        width: 120px;
+        height: 120px;        
+        &::after{
+            display:none;
+        }
+    }
+}
+.noteMsg {
+    font-size: 1.3rem;
+    color: #fff;
+    a {
+        color: #fff;
+        cursor:pointer;
+    }
+}
+.toggleContainer {
+    font-size: 1.8rem;
+    color: #81b8d6;
+    text-align: right;
+    margin-top: 20px;
+    position: absolute;
+    width: 90%;
+    bottom: 27%;
+    left: 5%;    
+    .infoIcon {
+        height: 20px;
+        vertical-align: middle;
+        margin-left: 4px;
+    }
+    .toolTip {
+        text-align: left;
+        background: #feffcb;
+        width: 100%;
+        position: absolute;
+        padding: 12px;
+        top: 0;
+        left:0;
+        color: #888;   
+        border-radius: 12px;
+        .closeBtn {
+            width:16px;
+            height:16px;
+            position:absolute;
+            right:8px;
+            top:8px;
+            img {
+                height:16px;
+            }
+        }
+    }
+}
+.offlineLogin {
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #fff;        
+    }
+    .inputGroup {
+    display:flex;
+    width:230px;
+    margin:auto;
+        input[type="password"] {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            font-size: 4rem;
+            text-align: center;
+            border-radius:6px;
+        }
+    }
+    .login__submit {
+        background:#efefef;
+        color: #4e4e4e;
+    }
+}
+.app__title__header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu__container {
+    width:80%;
+    height:100vh;
+    background:#172b45;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        ul {
+            li {
+                           
+                a {
+                    font-size: 1.5rem;
+                    color: #fff;
+                    text-decoration: none;
+                    padding:10px 10px 10px 38px;
+                    display: block;
+                    border-bottom: 1px solid #273e5d;    
+                    &.see {
+                        background: url("../images/icons/see.svg") no-repeat;
+                        background-size: 25px 25px;
+                        background-position: 5px 4px;
+                    }    
+                    &.move {
+                        background: url("../images/icons/move.svg") no-repeat;
+                        background-size: 32px 32px;
+                        background-position: 3px 0px;
+                    }                          
+                    &.mail {
+                        background: url("../images/icons/mailbox.svg") no-repeat;
+                        background-size: 22px 22px;
+                        background-position: 7px 5px;
+                    }     
+                    &.locate {
+                        background: url("../images/icons/locate.svg") no-repeat;
+                        background-size: 18px 18px;
+                        background-position: 8px 7px;
+                    }   
+                    &.offline {
+                        background: url("../images/icons/offline.svg") no-repeat;
+                        background-size: 18px 18px;
+                        background-position: 8px 7px;
+                    }   
+                }
+                ul {
+                    background: rgb(0, 17, 37);
+                    li {
+                        a {
+                            border-bottom: 1px solid #0b1d35;
+                            padding-left: 40px;
+                            color: #c4cfdc;
+                        }
+                    }
+                }
+            }
+        }
+}
+.app.menu__open {
+    transform: translateX(80%);
+}

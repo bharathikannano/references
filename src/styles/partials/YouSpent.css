@@ -1,0 +1,76 @@
+.youSpent .container {
+  overflow: inherit; }
+
+.container {
+  perspective: 1000px;
+  transition: 2s;
+  transform-style: preserve-3d;
+  margin-bottom: 20px; }
+
+.hover {
+  transform: rotateY(180deg);
+  transition: 2s;
+  transform-style: preserve-3d; }
+
+.container div {
+  height: 50%; }
+
+.rbc-label-start {
+  font-family: fontawesome;
+  font-weight: bold;
+  font-size: 30px; }
+
+.rbc-center-text {
+  font-family: 'Roboto', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial;
+  fill: white;
+  font-size: 45px; }
+
+.app__top .c3-chart-arc text {
+  display: none; }
+
+.app__top .c3-chart-arc path {
+  stroke: #000; }
+
+.c3-chart-arcs-title {
+  font-size: 20px;
+  fill: #fff; }
+
+.legend .app__meeting-info {
+  font-size: 1.5rem;
+  width: 100%; }
+
+.legend .legends__span {
+  height: 20px;
+  width: 10px; }
+
+.legend .app__meeting {
+  padding: 15px 10px;
+  border: none; }
+  .legend .app__meeting:first-child {
+    margin-top: 10px; }
+
+.title-text {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 15px 10px;
+  background: #a9a9a933; }
+  .title-text .float_right {
+    color: #444; }
+
+.float_right {
+  float: right; }
+
+.myProgress {
+  display: block;
+  width: 100%;
+  background-color: #f3f3f3;
+  margin-top: 2px; }
+
+.myBar {
+  display: block;
+  width: 0%;
+  height: 2px;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-transition: width 5s;
+  transition-timing-function: ease-in;
+  transition: width 5s; }

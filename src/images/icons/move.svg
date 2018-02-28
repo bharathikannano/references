@@ -1,0 +1,19 @@
+<svg width="96" height="96" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#ffffff" id="svg_4" d="m48.207,52.447c0.24,0 0.43,0.191 0.43,0.43l0,0.221c0.59,0.07 1.09,0.26 1.549,0.549c0.16,0.09 0.301,0.24 0.301,0.48c0,0.311 -0.25,0.549 -0.561,0.549c-0.1,0 -0.199,-0.029 -0.299,-0.09c-0.35,-0.209 -0.689,-0.359 -1.029,-0.439l0,1.92c1.52,0.379 2.168,0.988 2.168,2.059c0,1.1 -0.859,1.828 -2.129,1.949l0,0.6c0,0.24 -0.189,0.43 -0.43,0.43s-0.439,-0.189 -0.439,-0.43l0,-0.619c-0.75,-0.08 -1.439,-0.352 -2.049,-0.781c-0.17,-0.109 -0.27,-0.27 -0.27,-0.479c0,-0.311 0.24,-0.551 0.549,-0.551c0.121,0 0.24,0.041 0.33,0.111c0.471,0.34 0.93,0.568 1.48,0.668l0,-1.969c-1.461,-0.379 -2.141,-0.93 -2.141,-2.059c0,-1.068 0.85,-1.809 2.1,-1.908l0,-0.211c0.001,-0.238 0.2,-0.43 0.44,-0.43zm-0.398,3.408l0,-1.768c-0.641,0.059 -0.961,0.398 -0.961,0.838c0,0.421 0.191,0.68 0.961,0.93zm0.789,1.391l0,1.818c0.639,-0.07 0.988,-0.391 0.988,-0.869c0,-0.439 -0.219,-0.711 -0.988,-0.949z"/>
+  <path fill-opacity="0" id="svg_5" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" fill="#000000" d="m66.75,69.766l4.25,0c1.104,0 2,-0.896 2,-2l0,-22.004c0,-1.104 -0.896,-2 -2,-2l-46,0c-1.104,0 -2,0.896 -2,2l0,22.004c0,1.104 0.896,2 2,2l35.875,0"/>
+  <circle id="svg_6" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" r="7.656" fill="none" cy="56.764" cx="48"/>
+  <path id="svg_8" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" fill="none" d="m65.896,27.593c-0.261,-0.979 -1.266,-1.558 -2.242,-1.295l-40.687,10.901c-0.979,0.263 -1.559,1.266 -1.296,2.243"/>
+  <path id="svg_9" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" fill="none" d="m70.23,43.766l-4.334,-16.173c-0.261,-0.979 -1.266,-1.558 -2.242,-1.295l-40.687,10.901c-0.979,0.263 -1.559,1.266 -1.296,2.243l1.329,5.205"/>
+  <line id="svg_10" y2="43.762" y1="39.66" x2="47.578" x1="62.885" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" fill="none"/>
+  <polyline id="svg_11" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" points="    49.541,35.811 66.855,31.172 68.713,38.099 65.797,38.88   " fill="none"/>
+  <line id="svg_12" y2="37.31" y1="43.021" x2="43.949" x1="22.63" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" fill="none"/>
+  <ellipse id="svg_13" cy="68.970832" cx="115.68918" fill-opacity="0" stroke-width="2" stroke="#ffffff" fill="#000000"/>
+ </g>
+</svg>
